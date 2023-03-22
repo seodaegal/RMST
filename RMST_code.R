@@ -18,11 +18,12 @@ head(D[,1:3])
 
 
 
-# RMST로 test of the diffrence in restricted means
+# RMST로 test of the difference in restricted means (between arm)
 
 #RMTL은 area above the curve of the survival function up to a certain time T
-#시간0에서부터 정해진 시점까지의 평균 생존의 척도를 보여줌
-#restricted => restricted time interval
+#시간 0 에서부터 정해진 시점까지의 평균 생존의 척도를 보여줌
+
+#restricted => restricted time interval을 의미
 #그래서 rmst가 더 reliable (for example, when we have a censored case at a specific time point)
 
 
@@ -40,7 +41,7 @@ obj
 
 plot(obj, xlab="Years", ylab="Probability")
 
-#RMTL ratios approximate HRs for each trial
+#RMTL ratios approximate HRs for each trial when event rate is low
 #Comparing the RMST ratios for the two groups could then help you determine which treatment is more effective.
 #RMTL ratio can be used to compare the expected time lost 
 
