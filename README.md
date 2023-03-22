@@ -1,2 +1,2 @@
 # RMST
-Restricted mean survival time
+Restricted mean survival time 정리
